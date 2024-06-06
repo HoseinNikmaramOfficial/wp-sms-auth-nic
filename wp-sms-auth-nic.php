@@ -36,6 +36,11 @@ require_once plugin_dir_path(__FILE__) . 'includes/admin-settings.php'; // Admin
 // Shortcodes for registration and login forms
 function wp_sms_auth_registration_form_shortcode() {
     ob_start();
+    if ( is_user_logged_in() ) {
+		echo '<script type="text/javascript">
+				   window.location = "/my-account/"
+			  </script>';
+	}
     include plugin_dir_path(__FILE__) . 'public/register.php';
     return ob_get_clean();
 }
@@ -43,6 +48,11 @@ add_shortcode('wp_sms_auth_register', 'wp_sms_auth_registration_form_shortcode')
 
 function wp_sms_auth_login_form_shortcode() {
     ob_start();
+    if ( is_user_logged_in() ) {
+		echo '<script type="text/javascript">
+				   window.location = "/my-account/"
+			  </script>';
+	}
     include plugin_dir_path(__FILE__) . 'public/login.php';
     return ob_get_clean();
 }
@@ -50,6 +60,11 @@ add_shortcode('wp_sms_auth_login', 'wp_sms_auth_login_form_shortcode');
 
 function wp_sms_auth_both_form_shortcode() {
     ob_start();
+    if ( is_user_logged_in() ) {
+		echo '<script type="text/javascript">
+				   window.location = "/my-account/"
+			  </script>';
+	}
     include plugin_dir_path(__FILE__) . 'public/both.php';
     return ob_get_clean();
 }
