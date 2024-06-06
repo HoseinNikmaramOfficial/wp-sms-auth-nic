@@ -1,0 +1,107 @@
+.wp-sms-auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.wp-sms-auth-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.wp-sms-auth-container input[type="text"],
+.wp-sms-auth-container input[type="password"] {
+    width: 96.4%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.wp-sms-auth-container input[type="button"],
+.wp-sms-auth-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 17px;
+}
+
+#toggle-otp-login{
+    background: #fff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+#toggle-otp-login:hover{
+    color: #fff;
+    background: #6c757d;
+}
+
+#login-with-otp,#login-with-password,#final-register-button,#check-button{
+    background: #198754;
+    border: 1px solid #198754;
+    color: #fff;
+}
+#login-with-otp:hover ,#login-with-password:hover ,#final-register-button:hover ,#check-button:hover{
+    background: #157347;
+}
+
+#send-otp-login,#send-otp-register,#verify-otp{
+    background: #0d6efd;
+    border: 1px solid #0d6efd;
+    color: #fff;
+}
+#send-otp-login:hover ,#send-otp-register:hover ,#verify-otp:hover{
+    background: #0b5ed7;
+}
+
+.wp-sms-auth-loading {
+    width: 100%; /* Full width */
+    background-color: #d1ecf1; /* Bootstrap alert-info background color */
+    border-color: #bee5eb; /* Bootstrap alert-info border color */
+    color: #0c5460; /* Bootstrap alert-info text color */
+    padding: 10px; /* Padding for some space inside the alert */
+    border-radius: .25rem; /* Bootstrap alert border radius */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between text and image */
+    height: 50px; /* Your height requirement */
+}
+
+.wp-sms-auth-loading img {
+    height: 100%; /* Make image fill the alert height */
+    margin-left: 10px; /* Space between image and text */
+}
+
+.wp-sms-auth-loading p {
+    margin: 0; /* Remove default paragraph margin */
+    text-align: right; /* Align text to the right */
+    flex-grow: 1; /* Let text take up available space */
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+
+.wp_sms_auth_nic_admin{
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+.wp_sms_auth_nic_admin h1,.wp_sms_auth_nic_admin h2{
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.wp-block-post-title{
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.notyf{
+    font-family: 'Vazirmatn', sans-serif;
+}
